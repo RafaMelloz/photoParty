@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme{
+  --color-gold: #FFD700;
+}
+
+
+body {
+  @apply h-screen bg-neutral-900 text-zinc-100;
+}
+
+.custom-input{
+  @apply w-full bg-transparent placeholder:text-zinc-300 text-zinc-100 text-sm border border-zinc-200 rounded-md p-3 transition duration-300 focus:outline-none focus:border-amber-100  shadow-sm focus:shadow
+}
+
+.btn-google{
+  @apply w-full my-6 py-2.5 text-zinc-800 font-semibold bg-white rounded-md relative hover:scale-105 transition duration-300 hover:cursor-pointer
+}
+
+
+.gold-gradiente{
+  background: rgb(245,184,26);
+  background: linear-gradient(260deg, rgba(245,184,26,1) 16%, rgba(255,215,0,1) 100%);
+}
