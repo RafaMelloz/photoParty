@@ -4,7 +4,6 @@
   --color-gold: #FFD700;
 }
 
-
 body {
   @apply h-screen bg-neutral-900 text-zinc-100;
 }
@@ -21,4 +20,22 @@ body {
 .gold-gradiente{
   background: rgb(245,184,26);
   background: linear-gradient(260deg, rgba(245,184,26,1) 16%, rgba(255,215,0,1) 100%);
+}
+
+
+.selector::after {
+    border-bottom: 0.2rem solid #ffd700cc;
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.selector:hover::after,
+.selector.active::after {
+    transform: scaleX(1);
 }

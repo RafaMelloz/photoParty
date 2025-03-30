@@ -1,12 +1,16 @@
 import { Header } from "@/components/header";
+import { authOptions } from "@/libs/auth";
+import { Plus } from "lucide-react";
+import { getServerSession } from "next-auth";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getServerSession(authOptions);
+
+
   return (
     <>
-        <Header/>
-        <div className="container">
-          <div></div>
-        </div>
+      <Header session={session}/>
+      
     </>
   );
 }

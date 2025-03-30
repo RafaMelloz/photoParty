@@ -18,12 +18,12 @@ export function FormSignIn() {
         const promise = signIn("credentials", {
             email: data.email,
             password: data.password,
-            redirect: false,
+            callbackUrl: "/home",
         });
     }
 
     async function handleLogin() {
-        await signIn("google")
+        await signIn("google", { callbackUrl: "/home" });
     }
 
     return (

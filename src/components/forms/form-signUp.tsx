@@ -32,7 +32,7 @@ export function FormSignUp({logged} : {logged: boolean}) {
         if (logged) {
             await signOut({ redirect: false }); 
         }
-        await signIn("google", { callbackUrl: "/" }); 
+        await signIn("google", { callbackUrl: "/home" }); 
     }
 
     return (
