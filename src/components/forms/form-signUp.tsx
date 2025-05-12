@@ -50,23 +50,23 @@ export function FormSignUp({logged} : {logged: boolean}) {
 
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 mt-4">
                 <input
-                    className={errors.name ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"}
+                    className={errors.name ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input p-3"}
                     placeholder="Nome"
                     {...register("name", { required: true })}
                 />
                 <input
-                    className={errors.email ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"}
+                    className={errors.email ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input p-3"}
                     placeholder="E-mail"
                     {...register("email", { required: true })}
                 />
                 <div className="flex gap-4">	
                     <input
-                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"}
+                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input p-3"}
                         placeholder="Senha"
                         {...register("password", { required: true })}
                     />
                     <input
-                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"}
+                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input p-3"}
                         placeholder="Confirme sua senha"
                         {...register("passwordConfirm", { required: true })}
                     />

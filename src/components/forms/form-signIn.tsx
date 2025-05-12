@@ -40,14 +40,14 @@ export function FormSignIn() {
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 mt-4">
                 <div className="w-full">
                     <input 
-                        className={errors.email ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"} 
+                        className={errors.email ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input  p-3"} 
                         placeholder="Seu email" 
                         {...register("email", { required: true })} 
                     />
                 </div>
                 <div className="w-full">
                     <input 
-                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400" : "custom-input"}
+                        className={errors.password ? "custom-input !border-red-400 placeholder:!text-red-400 p-3" : "custom-input p-3"}
                         placeholder="Sua senha"  
                         {...register("password", { required: true })} 
                     />

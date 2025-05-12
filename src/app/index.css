@@ -9,7 +9,10 @@ body {
 }
 
 .custom-input{
-  @apply w-full bg-transparent placeholder:text-zinc-300 text-zinc-100 text-sm border border-zinc-200 rounded-md p-3 transition duration-300 focus:outline-none focus:border-amber-100  shadow-sm focus:shadow
+  @apply w-full bg-transparent placeholder:text-zinc-300 text-zinc-100 text-sm border border-zinc-200 rounded-md 
+  
+  
+  transition duration-300 focus:outline-none focus:border-amber-100  shadow-sm focus:shadow
 }
 
 .btn-google{
